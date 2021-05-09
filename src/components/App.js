@@ -22,6 +22,7 @@ import ReactGA from "react-ga";
 import favicon from "../assets/favicon.png";
 import logoSmall from "../assets/rw-full-logo-wb.png";
 import logoMinimal from "../assets/rw-logo-minimal.png";
+import effra from "../assets/Effra_Std_Rg.ttf";
 
 if (process.env.GOOGLE_ANALYTICS_ID !== "null") {
   ReactGA.initialize(process.env.GOOGLE_ANALYTICS_ID);
@@ -31,7 +32,7 @@ if (process.env.GOOGLE_ANALYTICS_ID !== "null") {
 const useStyles = makeStyles((theme) => {
   return {
     topBar: {
-      backgroundColor: theme.palette.primary,
+      backgroundColor: '#9DACFF',
     },
     bottomBar: {
       top: "auto",

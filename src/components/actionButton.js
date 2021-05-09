@@ -4,14 +4,16 @@ import Typography from "@material-ui/core/Typography";
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { useHistory } from "react-router-dom";
+import effra from "../assets/Effra_Std_Rg.ttf";
 
 const useStyles = makeStyles((theme) => {
   return {
     actionButton: {
       margin: theme.spacing(2),
-      width: 300,
+      width: 400,
       // padding: 50
-      height: 100,
+      height: 120,
+      background: '#9DACFF',
       [theme.breakpoints.down('sm')]: {
         width: 250,
         height: 75,
@@ -19,6 +21,8 @@ const useStyles = makeStyles((theme) => {
     },
     buttonLabel: {
       margin: theme.spacing(2),
+      color: 'white',
+      fontFamily: effra,
       [theme.breakpoints.down('sm')]: {
         fontSize: "2rem",
       },

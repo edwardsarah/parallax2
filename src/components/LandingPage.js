@@ -8,6 +8,8 @@ import Container from "@material-ui/core/Container";
 
 import landingHeaderImage from '../assets/bg-about.jpg';
 import banner from "../assets/rw-icon-cluster.png";
+import parallax_title from "../assets/parallax_text.png";
+import effra from "../assets/Effra_Std_Rg.ttf"
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -25,9 +27,10 @@ const useStyles = makeStyles((theme) => {
       margin: theme.spacing(2),
     },
     landingHeader: {
-      backgroundImage: `linear-gradient(180deg, #000000ff, #ffffff00), url(${landingHeaderImage})`,
+      // backgroundImage: `linear-gradient(180deg, #9DACFF, #ffffff00), url(${landingHeaderImage})`,
+      backgroundImage: `linear-gradient(180deg, #9DACFF, white)`,
       backgroundSize: "cover",
-      height: "100%",
+      height: "2000px",
       backgroundPosition: "center",
     },
     landingTitle: {
@@ -41,6 +44,9 @@ const useStyles = makeStyles((theme) => {
     },
     landingTagline: {
       textAlign: "center",
+      fontSize: "36px",
+      fontFamily: effra,
+      color: "#9DACFF",
       height: "15vh",
       paddingTop: 15,
       [theme.breakpoints.down('xs')]: {
@@ -49,7 +55,7 @@ const useStyles = makeStyles((theme) => {
     },
     landingBanner: {
       width: "auto",
-      height: 100,
+      height: 800,
       [theme.breakpoints.down("xs")]: {
         width: "70%",
         height: "auto",
@@ -73,11 +79,10 @@ export const LandingPage = (props) => {
         className={classes.landingHeader}>
         <Grid
           container
-          justify="center"
-          style={{height: "100px"}}>
+          justify="center">
           <Grid
             item
-            style={{margin: 'auto', height: "15vh", "textAlign": "center", "paddingTop": 15}}
+            style={{margin: 'auto', "textAlign": "center"}}
             sm={12}>
             {/*<Typography
               variant={"h2"}
@@ -86,7 +91,7 @@ export const LandingPage = (props) => {
               {roundware._project && roundware._project.projectName}
             </Typography>*/}
             <img
-              src={banner}
+              src={parallax_title}
               className={classes.landingBanner}
             />
           </Grid>
@@ -97,26 +102,28 @@ export const LandingPage = (props) => {
               variant={"subtitle1"}
               className={classes.landingTagline}
               style={{"textAlign": "center", height: "15vh"}}>
-              Contributory Audio Augmented Reality
+              An audio experience for discovery
               <br />
-              for Art, Education and Documentary
+              and rediscovery with the public art at MIT
             </Typography>
           </Grid>
         </Grid>
         <Grid
           container
+          direction = "column"
           justify="center"
-          style={{height: "200px"}}>
+          alignItems="center">
           <Grid item>
             <ActionButton
-              label={"Listen"}
+              label={"ENTER EXPERIENCE"}
               linkTo={"/listen"}
               style={{width: "100%"}}/>
           </Grid>
           <Grid item>
             <ActionButton
-              label={"Speak"}
-              linkTo={"/speak"} />
+              label={"RECORD MY ANGLE"}
+              linkTo={"/speak"}
+              style={{width: "100%"}}/>
           </Grid>
         </Grid>
 
