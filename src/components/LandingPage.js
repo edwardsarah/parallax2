@@ -125,6 +125,18 @@ export const LandingPage = (props) => {
               linkTo={"/speak"}
               style={{width: "100%"}}/>
           </Grid>
+          <Grid item>
+            <ActionButton
+              label={"AESOP'S FABLES"}
+              linkTo={"/suvero"}
+              style={{width: "100%"}}/>
+          </Grid>
+          <Grid item>
+            <ActionButton
+              label={"AGAINST THE RUN"}
+              linkTo={"/kwade"}
+              style={{width: "100%"}}/>
+          </Grid>
         </Grid>
 
       </Grid>

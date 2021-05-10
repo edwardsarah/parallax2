@@ -18,6 +18,8 @@ import ListenFilterDrawer from "./listen-filter-drawer";
 import InfoPopup from "./info-popup";
 import Helmet from "react-helmet";
 import ReactGA from "react-ga";
+import { SuveroPage } from "./SuveroPage";
+import { KwadePage } from "./KwadePage";
 
 import favicon from "../assets/favicon.png";
 import logoSmall from "../assets/rw-full-logo-wb.png";
@@ -107,6 +109,8 @@ export const App = () => {
           <Route path="/listen" component={ListenPage} />
           <Route path="/speak" component={SpeakPage} />
           <Route path="/debug" component={DebugPage} />
+          <Route path="/suvero" component={SuveroPage} />
+          <Route path="/kwade" component={KwadePage} />
         </Switch>
       </div>
       <Toolbar className={classes.bottomBar} />
