@@ -1,6 +1,7 @@
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { ActionButton } from "./actionButton";
+import { ArtButton } from "./artButton";
 import React, { Fragment } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { useRoundware } from "../hooks";
@@ -79,9 +80,6 @@ const useStyles = makeStyles((theme) => {
         paddingRight: 64,
         paddingTop: 4,
     },
-    artBox: {
-        boxShadow: "3px 3px",
-    },
     landingBanner: {
       width: "90%",
       height: "auto",
@@ -130,17 +128,48 @@ export const MapPage = (props) => {
           container
           direction = "column"
           justify="center"
-          alignItems="center">
+          alignItems="center"
+          style = {{}}>
           <Grid item>
-            <ActionButton
-              label={"AESOP'S FABLES"}
+            <ArtButton
+              artistLabel={"Mark Di Suvero,"}
+              artLabel={"AESOP'S FABLES II"}
               linkTo={"/suvero"}
               style={{width: "100%"}}/>
           </Grid>
           <Grid item>
-            <ActionButton
-              label={"AGAINST THE RUN"}
+            <ArtButton
+              artistLabel={"Alicja Kwade,"}
+              artLabel={"Against the Run"}
               linkTo={"/kwade"}
+              style={{width: "100%"}}/>
+          </Grid>
+          <Grid item>
+            <ArtButton
+              artistLabel={"Richard Fleischner,"}
+              artLabel={"LOWER COURTYARD"}
+              linkTo={"/"}
+              style={{width: "100%"}}/>
+          </Grid>
+          <Grid item>
+            <ArtButton
+              artistLabel={"Henry Moore,"}
+              artLabel={"RECLINING FIGURE"}
+              linkTo={"/"}
+              style={{width: "100%"}}/>
+          </Grid>
+          <Grid item>
+            <ArtButton
+              artistLabel={"Jules Olitski,"}
+              artLabel={"MAGIC NUMBER"}
+              linkTo={"/"}
+              style={{width: "100%"}}/>
+          </Grid>
+          <Grid item>
+            <ArtButton
+              artistLabel={"Sol LeWitt,"}
+              artLabel={"WALL DRAWING #254"}
+              linkTo={"/"}
               style={{width: "100%"}}/>
           </Grid>
           <Grid item>

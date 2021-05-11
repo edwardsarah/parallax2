@@ -60,7 +60,6 @@ const useStyles = makeStyles((theme) => {
         fontWeight: "bold",
         paddingLeft: 64,
         paddingTop: 24,
-        fontStyle: "italic"
     },
     artHeader: {
         textAlign: "left",
@@ -130,6 +129,15 @@ export const SuveroPage = (props) => {
               src={diSuvero}
               className={classes.landingBanner}
             />
+          </Grid>
+          <Grid
+            item
+            sm={12}>
+            <Typography
+              variant={"subtitle1"}
+              className={classes.artTitle}>
+              Mark Di Suvero
+            </Typography>
           </Grid>
           <Grid
             item

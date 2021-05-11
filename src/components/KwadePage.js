@@ -134,6 +134,15 @@ export const KwadePage = (props) => {
             item
             sm={12}>
             <Typography
+              variant={"subtitle1"}
+              className={classes.artTitle}>
+              Alicja Kwade
+            </Typography>
+          </Grid>
+          <Grid
+            item
+            sm={12}>
+            <Typography
               className={classes.artHeader}>
                   Type
             </Typography>
