@@ -137,7 +137,7 @@ const LocationSelectForm = () => {
                     lat: draftRecording.location.latitude,
                     lng: draftRecording.location.longitude,
                   },
-                  zoom: 9,
+                  zoom: 15,
                   zoomControl: true,
                   draggable: true,
                   mapTypeControl: false,

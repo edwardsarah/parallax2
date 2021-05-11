@@ -208,7 +208,7 @@ export const KwadePage = (props) => {
             <Grid item>
             <ActionButton
               label={"Record"}
-              linkTo={"/map"}
+              linkTo={"/speak"}
               style={{width: "100%"}}/>
               </Grid>
 

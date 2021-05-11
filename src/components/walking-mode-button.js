@@ -58,6 +58,7 @@ const walkingModeButton = () => {
       console.log("switching to walking mode");
       // disable map panning
       map.setOptions({gestureHandling: "none"});
+      console.log("Found location")
       // zoom in
       map.setZoom(17);
       // determine user location and listen for updates

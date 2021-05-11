@@ -51,7 +51,7 @@ const RoundwareMap = (props) => {
           map.mapTypes.set("styled_map", styledMapType);
           map.setOptions({
             center: { lat: 0, lng: 0 },
-            zoom: 5,
+            zoom: 16,
             zoomControl: true,
             draggable: true,
             mapTypeControl: false,
