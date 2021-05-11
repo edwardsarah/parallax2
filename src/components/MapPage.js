@@ -122,7 +122,7 @@ export const MapPage = (props) => {
             </Typography>
             <Typography
               className={classes.artInfo}>
-                Some things about Parallax here!
+                Map probably goes here.
             </Typography>
           </Grid>
         </Grid>
