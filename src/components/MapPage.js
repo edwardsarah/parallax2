@@ -8,7 +8,7 @@ import Container from "@material-ui/core/Container";
 
 import landingHeaderImage from '../assets/bg-about.jpg';
 import banner from "../assets/rw-icon-cluster.png";
-import parallax_title from "../assets/parallax_text.png";
+import kwadeImage from "../assets/kwadeImage.jpg";
 import effra from "../assets/Effra_Std_Rg.ttf"
 
 const useStyles = makeStyles((theme) => {
@@ -28,9 +28,8 @@ const useStyles = makeStyles((theme) => {
     },
     landingHeader: {
       // backgroundImage: `linear-gradient(180deg, #9DACFF, #ffffff00), url(${landingHeaderImage})`,
-      backgroundImage: `linear-gradient(180deg, #9DACFF, white)`,
+      background: "#9DACFF",
       backgroundSize: "cover",
-      height: "2000px",
       backgroundPosition: "center",
     },
     landingTitle: {
@@ -46,16 +45,46 @@ const useStyles = makeStyles((theme) => {
       textAlign: "center",
       fontSize: "36px",
       fontFamily: effra,
-      color: "#9DACFF",
+      color: "black",
       height: "15vh",
       paddingTop: 15,
       [theme.breakpoints.down('xs')]: {
         lineHeight: "1.2em",
       },
     },
+    artTitle: {
+        textAlign: "left",
+        fontSize: "36px", 
+        fontFamily: effra, 
+        color: "black",
+        fontWeight: "bold",
+        paddingLeft: 64,
+        paddingTop: 24,
+    },
+    artHeader: {
+        textAlign: "left",
+        fontSize: "24px", 
+        fontFamily: effra, 
+        color: "black",
+        fontWeight: "bold",
+        paddingLeft: 64,
+        paddingTop: 4,
+    },
+    artInfo: {
+        textAlign: "left",
+        fontSize: "24px", 
+        fontFamily: effra, 
+        color: "black",
+        paddingLeft: 64,
+        paddingRight: 64,
+        paddingTop: 4,
+    },
+    artBox: {
+        boxShadow: "3px 3px",
+    },
     landingBanner: {
-      width: "auto",
-      height: 800,
+      width: "90%",
+      height: "auto",
       [theme.breakpoints.down("xs")]: {
         width: "70%",
         height: "auto",
@@ -64,7 +93,7 @@ const useStyles = makeStyles((theme) => {
   };
 });
 
-export const LandingPage = (props) => {
+export const MapPage = (props) => {
   const { roundware } = useRoundware();
   const classes = useStyles();
 
@@ -76,35 +105,24 @@ export const LandingPage = (props) => {
       style={{"paddingRight": 0, "paddingLeft": 0}}>
       <Grid
         container
-        className={classes.landingHeader}>
+        className={classes.landingHeader}
+        style = {{"paddingTop": 48}}>
         <Grid
           container
-          justify="center">
-          <Grid
-            item
-            style={{margin: 'auto', "textAlign": "center"}}
-            sm={12}>
-            {/*<Typography
-              variant={"h2"}
-              className={classes.landingTitle}
-            >
-              {roundware._project && roundware._project.projectName}
-            </Typography>*/}
-            <img
-              src={parallax_title}
-              className={classes.landingBanner}
-            />
-          </Grid>
+          justify="flex-start"
+          alignItems="flex-start"
+          style = {{"background": "white", "borderRadius":25, "width": 1200, "margin": "auto", "boxShadow": "5px 5px black"}}>
           <Grid
             item
             sm={12}>
             <Typography
               variant={"subtitle1"}
-              className={classes.landingTagline}
-              style={{"textAlign": "center", height: "15vh"}}>
-              An audio experience for discovery
-              <br />
-              and rediscovery with the public art at MIT
+              className={classes.artTitle}>
+              Map
+            </Typography>
+            <Typography
+              className={classes.artInfo}>
+                Some things about Parallax here!
             </Typography>
           </Grid>
         </Grid>
@@ -115,20 +133,20 @@ export const LandingPage = (props) => {
           alignItems="center">
           <Grid item>
             <ActionButton
-              label={"ENTER EXPERIENCE"}
-              linkTo={"/listen"}
+              label={"AESOP'S FABLES"}
+              linkTo={"/suvero"}
               style={{width: "100%"}}/>
           </Grid>
           <Grid item>
             <ActionButton
-              label={"RECORD MY ANGLE"}
-              linkTo={"/speak"}
+              label={"AGAINST THE RUN"}
+              linkTo={"/kwade"}
               style={{width: "100%"}}/>
           </Grid>
           <Grid item>
             <ActionButton
-              label={"INTRO"}
-              linkTo={"/intro"}
+              label={"return to home"}
+              linkTo={"/"}
               style={{width: "100%"}}/>
           </Grid>
         </Grid>

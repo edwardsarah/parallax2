@@ -20,6 +20,8 @@ import Helmet from "react-helmet";
 import ReactGA from "react-ga";
 import { SuveroPage } from "./SuveroPage";
 import { KwadePage } from "./KwadePage";
+import { IntroPage } from "./IntroPage";
+import { MapPage } from "./MapPage";
 
 import favicon from "../assets/favicon.png";
 import logoSmall from "../assets/rw-full-logo-wb.png";
@@ -111,6 +113,8 @@ export const App = () => {
           <Route path="/debug" component={DebugPage} />
           <Route path="/suvero" component={SuveroPage} />
           <Route path="/kwade" component={KwadePage} />
+          <Route path="/intro" component={IntroPage} />
+          <Route path="/map" component={MapPage} />
         </Switch>
       </div>
       <Toolbar className={classes.bottomBar} />
