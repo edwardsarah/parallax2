@@ -228,6 +228,26 @@ export const SuveroPage = (props) => {
                  <br></br>
                  <br></br>
             </Typography>
+
+            <Grid
+            container
+            direction = "row"
+            justify="center"
+            alignItems="center">
+            <Grid item>
+            <ActionButton
+              label={"Listen"}
+              linkTo={"/listen"}
+              style={{width: "100%"}}/>
+            </Grid>
+
+            <Grid item>
+            <ActionButton
+              label={"Record"}
+              linkTo={"/map"}
+              style={{width: "100%"}}/>
+              </Grid>
+            </Grid>
           </Grid>
         </Grid>
         <Grid
