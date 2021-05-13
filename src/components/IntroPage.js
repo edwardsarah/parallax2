@@ -123,8 +123,9 @@ export const IntroPage = (props) => {
             <Typography
               className={classes.artInfo}>
                 Parallax is a participatory audio experience which aims to give a new context to public art on campus. 
-                Check out the map to see where you can find art on campus, and select specific artworks to get more information on them.
-                Click the listen button on the pages for particular artwork to hear thoughts from other people, and press record to leave your own behind.
+                Check out the map to see where you can find art on campus, and select specific artworks to get more information on them. From there, you can press the listen
+                button to hear recordings of thoughts that curators and other visitors have left about the art around you. You can also press the record button to view prompts and 
+                leave your own responses. 
                 <br></br>
                 <br></br>
             </Typography>
