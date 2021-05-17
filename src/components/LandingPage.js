@@ -119,18 +119,6 @@ export const LandingPage = (props) => {
               linkTo={"/intro"}
               style={{width: "100%"}}/>
           </Grid>
-          <Grid item>
-            <ActionButton
-              label={"ENTER EXPERIENCE"}
-              linkTo={"/listen"}
-              style={{width: "100%"}}/>
-          </Grid>
-          <Grid item>
-            <ActionButton
-              label={"RECORD MY ANGLE"}
-              linkTo={"/speak"}
-              style={{width: "100%"}}/>
-          </Grid>
         </Grid>
 
       </Grid>
