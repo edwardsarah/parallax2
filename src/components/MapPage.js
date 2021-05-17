@@ -4,8 +4,10 @@ import { ActionButton } from "./actionButton";
 import { ArtButton } from "./artButton";
 import React, { Fragment } from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { useRoundware } from "../hooks";
+import { useQuery, useRoundware } from "../hooks";
 import Container from "@material-ui/core/Container";
+import RoundwareMap from "./map";
+import mapScreenshot from "../assets/map_screenshot.png";
 
 import landingHeaderImage from '../assets/bg-about.jpg';
 import banner from "../assets/rw-icon-cluster.png";
@@ -14,6 +16,9 @@ import effra from "../assets/Effra_Std_Rg.ttf"
 
 const useStyles = makeStyles((theme) => {
   return {
+      map: {
+        display: "flex"
+      },
     topBar: {
       backgroundColor: theme.palette.grey[900],
     },
@@ -109,19 +114,15 @@ export const MapPage = (props) => {
           container
           justify="flex-start"
           alignItems="flex-start"
-          style = {{"background": "white", "borderRadius":25, "width": 1200, "margin": "auto", "boxShadow": "5px 5px black"}}>
+          style = {{"background": "white", "borderRadius":25, "width": 1200, "height": "auto", "margin": "auto", "boxShadow": "5px 5px black"}}>
           <Grid
             item
+            style={{"textAlign": "center"}}
             sm={12}>
-            <Typography
-              variant={"subtitle1"}
-              className={classes.artTitle}>
-              Map
-            </Typography>
-            <Typography
-              className={classes.artInfo}>
-                Map probably goes here.
-            </Typography>
+        <img
+              src={mapScreenshot}
+              className={classes.landingBanner}
+            />
           </Grid>
         </Grid>
         <Grid
