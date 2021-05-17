@@ -86,10 +86,11 @@ const useStyles = makeStyles((theme) => {
         paddingTop: 4,
     },
     landingBanner: {
-      width: "90%",
+      width: "100%",
       height: "auto",
+      borderRadius: 25,
       [theme.breakpoints.down("xs")]: {
-        width: "70%",
+        width: "100%",
         height: "auto",
       },
     },
